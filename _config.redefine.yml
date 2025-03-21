@@ -165,16 +165,13 @@ home_banner:
   # Home banner social links
   social_links:
     # Whether to enable
-    enable: false
+    enable: True
     # Social links style
     style: default # default, reverse, center
     # Social links
     links:
-      github:  # your GitHub URL
-      instagram: # your Instagram URL
-      zhihu:  # your ZhiHu URL
-      twitter:  # your twitter URL
-      email:  # your email
+      github: https://github.com/LDDH-Aaron # your GitHub URL
+      email:  mingyanghuang55@gmail.com # your email
       # ...... # you can add more
     # Social links with QRcode drawers
     qrs:
@@ -202,20 +199,30 @@ navbar:
     Home: 
       path: / 
       icon: fa-regular fa-house # can be empty
-    # Archives: 
-    #   path: /archives 
-    #   icon: fa-regular fa-archive # can be empty
+    Archives: 
+       path: /archives 
+       icon: fa-regular fa-archive # can be empty
+    Tags: 
+        path: /tags 
+        icon: fa-regular fa-tags # can be empty
+    Categories: 
+        path: /categories 
+        icon: fa-regular fa-folder
+    Photos:  #取名随意
+        icon: fa-solid fa-image #图标
+        path: /masonry/ 
+
     # Status: 
     #   path: https://status.ohevan.com/
     #   icon: fa-regular fa-chart-bar
-    # About: 
-    #   icon: fa-regular fa-user
-    #   submenus:
-    #     Me: /about
-    #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
-    #     Blog: https://ohevan.com
+    About: 
+       icon: fa-regular fa-user
+       submenus:
+         Me: /about
+         Github: https://github.com/LDDH-Aaron
     #     Friends: /friends
-    # Links: 
+    
+    #Links: 
     #   icon: fa-regular fa-link
     #   submenus:
     #     Link1: /link1
@@ -225,7 +232,7 @@ navbar:
   # Navbar search (local search). Requires hexo-generator-searchdb (npm i hexo-generator-searchdb). See https://github.com/theme-next/hexo-generator-searchdb
   search:
     # Whether to enable
-    enable: false
+    enable: true
     # Preload search data when the page loads
     preload: true
 # NAVIGATION BAR <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -239,21 +246,21 @@ home:
     enable: true # Whether to enable sidebar
     position: left # Sidebar position. left, right
     first_item: menu # First item in sidebar. menu, info
-    announcement: # Announcement text
+    announcement: DhのBlog # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      # Archives: 
-      #   path: /archives 
-      #   icon: fa-regular fa-archive # can be empty
-      # Tags: 
-      #   path: /tags 
-      #   icon: fa-regular fa-tags # can be empty
-      # Categories: 
-      #   path: /categories 
-      #   icon: fa-regular fa-folder # can be empty
+       Tags: 
+         path: /tags 
+         icon: fa-regular fa-tags # can be empty
+       Archives: 
+         path: /archives 
+         icon: fa-regular fa-archive # can be empty
+       Categories: 
+         path: /categories 
+         icon: fa-regular fa-folder # can be empty
       # ...... # you can add more
   # Article date format
-  article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
+  article_date_format: MMM D, YYYY # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
   # Article excerpt length
   excerpt_length: 200 # Max length of article excerpt
   # Article categories visibility
@@ -291,7 +298,7 @@ articles:
   word_count:
     enable: true # Whether to enable
     count: true # Whether to display word count
-    min2read: true # Whether to display reading time
+    min2read: false # Whether to display reading time
   # Author label
   author_label: 
     enable: true # Whether to enable
@@ -344,7 +351,7 @@ articles:
 # Docs: https://redefine-docs.ohevan.com/posts/comment
 comment:
   # Whether to enable comment
-  enable: true
+  enable: false
   # Comment system
   system: waline # waline, gitalk, twikoo, giscus
   # System configuration
@@ -392,8 +399,8 @@ footer:
   runtime: true # show website running time or not
   # Icon in footer, write fontawesome icon code here
   icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
-  # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: 2022/8/17 11:45:14
+  # The start time of the website, format: YYYY/MM/DD
+  start: 2025/3/21
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
